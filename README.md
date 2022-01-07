@@ -1,24 +1,20 @@
-# Scoop Bucket Template
+# Scoop Bucket for Testing and Development
 
-<!-- Uncomment the following line after replacing placeholders -->
-<!-- [![Build Status](https://ci.appveyor.com/api/projects/status/<appveyor-badge-id>?svg=true)](https://ci.appveyor.com/project/<username>/<bucketname> "Build Status") [![Excavator](https://github.com/<username>/<bucketname>/actions/workflows/excavator.yml/badge.svg)](https://github.com/<username>/<bucketname>/actions/workflows/excavator.yml) -->
+[![Excavator](https://github.com/ScoopInstaller/Tests/actions/workflows/excavator.yml/badge.svg)](https://github.com/ScoopInstaller/Tests/actions/workflows/excavator.yml)
 
-Template bucket for [Scoop](https://scoop.sh), the Windows command-line installer.
+Testing purpose bucket that contains manifests using WIP features of [Scoop](https://scoop.sh), the Windows command-line installer.
 
-How do I install these manifests?
----------------------------------
+## Who needs to use this bucket?
 
-To add this bucket, run `scoop bucket add <bucketname> https://github.com/<username>/<bucketname>`. To install, do `scoop install <manifest>`.
+This bucket is for testing purposes only. Developer of [Scoop](https://scoop.sh) could add some manifests that use WIP features of [Scoop](https://scoop.sh) to this bucket.
 
-How do I contribute new manifests?
-----------------------------------
+This bucket's backend is [Scoop](https://scoop.sh)'s [develop](https://github.com/ScoopInstaller/Scoop/tree/develop) branch.
 
-To make a new manifest contribution, please read the [Contributing Guide](https://github.com/ScoopInstaller/.github/blob/main/.github/CONTRIBUTING.md).
+## How do I test new features and use these manifests?
 
-----
+- Use `develop` branch of [Scoop](https://scoop.sh): `scoop config SCOOP_BRANCH develop`
+- Sync to latest commit: `scoop update`
+- Add this bucket: `scoop bucket add tests https://github.com/ScoopInstaller/Tests`
+- Install manifest: `scoop install tests/<manifest>`
 
-#### To use this template
-
-- Modify the Readme.md and the bin/auto-pr.ps1 files accordingly.
-- Enable GitHub Actions for this repository.
-- Login to AppVeyor and import this repository.
+If you meet some problems, please open an issue on [Scoop](https://github.com/ScoopInstaller/Scoop/issues) or [Tests Bucket](https://github.com/ScoopInstaller/Tests/issues).

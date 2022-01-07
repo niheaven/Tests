@@ -2,8 +2,8 @@ version: "{build}-{branch}"
 branches:
   except:
     - gh-pages
-build: off
-deploy: off
+build: false
+deploy: false
 clone_depth: 2
 image: Visual Studio 2019
 environment:
@@ -21,7 +21,7 @@ cache:
 matrix:
   fast_finish: true
 init:
-  - ps: if(!(Test-Path "$env:SCOOP")) { git clone -q --depth=1 "https://github.com/ScoopInstaller/Scoop" "$env:SCOOP" }
+  - ps: if(!(Test-Path "$env:SCOOP")) { git clone -b "develop" -q --depth=1 "https://github.com/ScoopInstaller/Scoop" "$env:SCOOP" }
 for:
   - matrix:
       only:
