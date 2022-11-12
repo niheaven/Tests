@@ -1,5 +1,6 @@
 name: 📦 Package Request
 description: Open an issue about a missing package.
+title: "[Request]: "
 labels: ["package-request"]
 body:
 - type: checkboxes
@@ -13,11 +14,11 @@ body:
     label: Criteria
     description: For a package to be acceptable in this bucket, it should be
     options:
-    - label: for testing purpose
+    - label: For testing purpose
       required: true
-    - label: adapt to some new features
+    - label: Adapt to some new features
       required: true
-    - label: fairly standard install (e.g. uses a version-specific download URL, no elaborate pre/post install scripts)
+    - label: Fairly standard install (e.g. uses a version-specific download URL, no elaborate pre/post install scripts)
       required: true
 - type: input
   attributes:
