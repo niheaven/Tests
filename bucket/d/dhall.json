@@ -9,7 +9,7 @@
             "hash": "2d48476626439d2a11c8ed388806064c5d6c338caeec49c83bee0857e0d980d6"
         }
     },
-    "bin": "dhall.exe",
+    "bin": "bin\\dhall.exe",
     "checkver": {
         "github": "https://github.com/dhall-lang/dhall-haskell"
     },
