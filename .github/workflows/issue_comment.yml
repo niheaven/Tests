@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@main
       - name: PullRequestHandler
-        uses: ScoopInstaller/GithubActions@main
+        uses: ScoopInstaller/GithubActions@c9c8f14e724a03a9e5921e4217250880b68292c0
         if: startsWith(github.event.comment.body, '/verify')
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
