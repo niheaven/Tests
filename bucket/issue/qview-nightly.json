@@ -1,11 +1,11 @@
 {
     "##": "https://github.com/ScoopInstaller/Versions/pull/1188, https://github.com/ScoopInstaller/Versions/pull/828",
-    "version": "16544373639",
+    "version": "18433912418",
     "homepage": "https://github.com/jurplel/qView",
     "architecture": {
         "64bit": {
-            "url": "https://nightly.link/jurplel/qView/workflows/build/master/qView-nightly-Windows_64-2025-07-26.1.zip",
-            "hash": "c4963b0e890d8596b893371a3228406c5b698f2ed71325866a11425cca2b51fc"
+            "url": "https://nightly.link/jurplel/qView/workflows/build/master/qView-nightly-Windows_64-2025-10-11.1.zip",
+            "hash": "d26e2fda7b96c2c6b382fd8df3d83396c17d3778fa1ec52c1aa84f47b5a2b7b7"
         }
     },
     "checkver": {
