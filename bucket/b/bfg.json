@@ -10,8 +10,8 @@
     "hash": "md5:82f6c378e98b50a68330ad1084e6c32f",
     "bin": "bfg.jar",
     "checkver": {
-        "url": "https://search.maven.org/solrsearch/select/?q=g:com.madgag+AND+a:bfg",
-        "jsonpath": "$.response.docs[0].latestVersion"
+        "url": "https://central.sonatype.com/api/internal/browse/component/versions?sortField=normalizedVersion&sortDirection=desc&size=1&filter=namespace:com.madgag,name:bfg",
+        "jsonpath": "$.components[0].version"
     },
     "autoupdate": {
         "url": "https://repo1.maven.org/maven2/com/madgag/bfg/$version/bfg-$version.jar#/bfg.jar",
