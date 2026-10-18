@@ -1,23 +1,23 @@
 {
-    "version": "26.01",
+    "version": "26.04",
     "description": "A multi-format file archiver with high compression ratios",
     "homepage": "https://www.7-zip.org/",
     "license": "LGPL-2.1-or-later",
     "notes": "Add 7-Zip as a context menu option by running: \"$dir\\install-context.reg\"",
     "architecture": {
         "64bit": {
-            "url": "https://www.7-zip.org/a/7z2601-x64.msi",
-            "hash": "a47ea8dcf8bc08e6de474cae77c828e031fa22cb528f6095defffebf11cd02f2",
+            "url": "https://www.7-zip.org/a/7z2604-x64.msi",
+            "hash": "0b01334a418654293513449f61d6bfc99e5196ca371e3c3dc961eda57cd535c6",
             "extract_dir": "Files\\7-Zip"
         },
         "32bit": {
-            "url": "https://www.7-zip.org/a/7z2601.msi",
-            "hash": "9643110e10bd0f2f31afa30d904da77f91161b95cc9b744d2f58c9167e23c1a7",
+            "url": "https://www.7-zip.org/a/7z2604.msi",
+            "hash": "cdacbb1396ca43da6dacafa22f7007a6c6f9911c42683d71ba23cc88d7028b49",
             "extract_dir": "Files\\7-Zip"
         },
         "arm64": {
-            "url": "https://www.7-zip.org/a/7z2601-arm64.exe",
-            "hash": "1fecf4e3407950939c8ffcc3e42e3039821997dea155301c75369474e5f15175",
+            "url": "https://www.7-zip.org/a/7z2604-arm64.exe",
+            "hash": "d4117b95495b0e925334ae7b5bddf2853513274603de15dee6acf03999fbc09c",
             "pre_install": [
                 "$7zr = Join-Path $env:TMP '7zr.exe'",
                 "Invoke-WebRequest https://www.7-zip.org/a/7zr.exe -OutFile $7zr",
